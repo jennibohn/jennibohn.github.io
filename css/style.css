@@ -72,25 +72,26 @@
 .mhc-container-index {
   padding-top: calc(var(--header-height) * 1.2);
   min-height: calc(100vh);
-  background-color: var(--color1);
+  background: linear-gradient(var(--color1), var(--color1), var(--color6));
 }
 
 .mhc-container-about {
   padding-top: calc(var(--header-height) * 0.7);
   min-height: 100vh;
-  background-color: var(--color5);
+  background: linear-gradient(var(--color6), var(--color5));
 }
 
 .mhc-container-treatments {
   padding-top: calc(var(--header-height) * 0.7);
   min-height: 100vh;
-  background-color: var(--color8);
+  background: linear-gradient(var(--color5), var(--color8));
 }
 
 .mhc-container-contact {
   padding-top: calc(var(--header-height) * 0.7);
   min-height: calc(100vh - var(--footer-height));
-  background-color: var(--color3);
+  background: linear-gradient(var(--color8), var(--color3));
+
 }
 
 .mhc-content-index {
