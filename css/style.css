@@ -2,12 +2,20 @@
     --header-height: 100px;
     --footer-height: 100px;
 
+    /*
+    */
     --background-color: #F5E7D5;
     --primary-color: #8D738D;
     --secondary-color: #9D8A6C;
-}
 
-.teste {
+    --color1: #E8F1F0;
+    --color2: #E7B2C6;
+    --color3: #F4DBF9;
+    --color4: #B7FFCF;
+    --color5: #fcfdee;
+    --color6: #C3ECDA;
+    --color7: #FFF4DE;
+    --color8: #FFCDDE;
 }
 
 .mhc-body {
@@ -49,27 +57,59 @@
 
 }
 
-.mhc-content-index {
+.mhc-container-index {
     height: calc(100vh - var(--header-height));
+    /*
+    background-color: var(--color5);
+    */
+}
+
+.mhc-content-index {
     display: flex;
+}
+
+.mhc-col {
+    background-color: #E7B2C6;
+}
+
+.mhc-personal-picture {
+    height: 500px;
+    max-height: 70vh;
+    max-width: 70vw;
+}
+
+.mhc-title {
+    text-align: end;
+    font-size: 48px;
+}
+
+.mhc-subtitle {
+    text-align: end;
+    font-weight: 600;
+    font-size: 28px;
 }
 
 .mhc-content-index h2 {
     font-size: medium;
 }
 
-.mhc-content-about {
+.mhc-container-about {
     height: 100vh;
-    background-color: cadetblue;
-    background-color: white;
+    background-color: var(--color1);
 }
 
-.mhc-content-treatments {
+.mhc-container-treatments {
     height: 100vh;
-    background-color: darkcyan;
+    background-color: var(--color8);
 }
 
-.mhc-content-contact {
+.mhc-container-contact {
     height: calc(100vh - var(--footer-height));
-    background-color: darkslategrey;
+    background-color: var(--color3);
+}
+
+@media only screen and (max-width: 768px) {
+    .mhc-content-index {
+        flex-direction: column-reverse;
+    }
 }
