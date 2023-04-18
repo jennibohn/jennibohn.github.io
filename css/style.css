@@ -58,7 +58,7 @@
 }
 
 .mhc-container-index {
-    height: calc(100vh - var(--header-height));
+    min-height: calc(100vh - var(--header-height));
     /*
     background-color: var(--color5);
     */
@@ -94,17 +94,17 @@
 }
 
 .mhc-container-about {
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--color1);
 }
 
 .mhc-container-treatments {
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--color8);
 }
 
 .mhc-container-contact {
-    height: calc(100vh - var(--footer-height));
+    min-height: calc(100vh - var(--footer-height));
     background-color: var(--color3);
 }
 
