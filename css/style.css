@@ -9,13 +9,13 @@
   --secondary-color: #9d8a6c;
 
   --color1: #e8f1f0;
-  --color2: #e7b2c6;
-  --color3: #f4dbf9;
-  --color4: #b7ffcf;
-  --color5: #fcfdee;
-  --color6: #c3ecda;
-  --color7: #fff4de;
-  --color8: #ffcdde;
+  --color2: #c3ecda;
+  --color3: #fcfdee;
+  --color4: #fff4de;
+  --color5: #ffcdde;
+  --color6: #f4dbf9;
+  --color7: #e7b2c6;
+  --color8: #b7ffcf;
 }
 
 .mhc-body {
@@ -56,6 +56,14 @@
   height: calc(var(--header-height) * 0.32);
 }
 
+.mhc-flag {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex: 0.4;
+  max-width: 25px;
+}
+
 .mhc-footer {
   background-color: var(--primary-color);
   display: flex;
@@ -72,25 +80,31 @@
 .mhc-container-index {
   padding-top: calc(var(--header-height) * 1.2);
   min-height: calc(100vh);
-  background: linear-gradient(var(--color1), var(--color1), var(--color6));
+  background: linear-gradient(var(--color1), var(--color1), var(--color2));
 }
 
 .mhc-container-about {
   padding-top: calc(var(--header-height) * 0.7);
   min-height: 100vh;
-  background: linear-gradient(var(--color6), var(--color5));
+  background: linear-gradient(var(--color2), var(--color3));
 }
 
 .mhc-container-treatments {
   padding-top: calc(var(--header-height) * 0.7);
   min-height: 100vh;
-  background: linear-gradient(var(--color5), var(--color8));
+  background: linear-gradient(var(--color3), var(--color4));
+}
+
+.mhc-container-tips {
+  padding-top: calc(var(--header-height) * 0.7);
+  min-height: 100vh;
+  background: linear-gradient(var(--color4), var(--color5));
 }
 
 .mhc-container-contact {
   padding-top: calc(var(--header-height) * 0.7);
   min-height: calc(100vh - var(--footer-height));
-  background: linear-gradient(var(--color8), var(--color3));
+  background: linear-gradient(var(--color5), var(--color6));
 
 }
 
@@ -122,14 +136,21 @@
 
 
 .mhc-personal-picture {
-  height: 500px;
-  max-height: 70vh;
-  max-width: 70vw;
+  max-height: calc(min(500px, 70vh));
+  max-width: 50vw;
 }
 
 .mhc-content-index h2 {
   font-size: medium;
 }
+.mhc-tips {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+
 
 .mhc-social-media {
     display: flex;
@@ -211,6 +232,12 @@ a i {
 }
 
 @media only screen and (max-width: 768px) {
+
+  .mhc-personal-picture {
+    max-height: calc(min(500px, 70vh));
+    max-width: 80vw;
+  }
+
   .mhc-content-index {
     flex-direction: column-reverse;
   }

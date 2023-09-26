@@ -17,12 +17,21 @@
     />
     <meta name="author" content="Jennifer de Moraes Bohn Cezario" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:image" content="https://www.bohnphysio.com/assets/logo405x405.png">
-    <meta property="og:url" content="https://www.bohnphysio.com">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Jennifer Bohn - Fisioterapeuta integrativa">
-    <meta property="og:description" content="Fisioterapeuta integrativa com ampla experiência em geriatria e gerontologia com foco nas áreas cardiopulmonar, neurologia e ortopedia. Especialista em acupuntura">
-    <meta property="fb:app_id" content="780040857026073">
+    <meta
+      property="og:image"
+      content="https://www.bohnphysio.com/assets/logo405x405.png"
+    />
+    <meta property="og:url" content="https://www.bohnphysio.com" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Jennifer Bohn - Fisioterapeuta integrativa"
+    />
+    <meta
+      property="og:description"
+      content="Fisioterapeuta integrativa com ampla experiência em geriatria e gerontologia com foco nas áreas cardiopulmonar, neurologia e ortopedia. Especialista em acupuntura"
+    />
+    <meta property="fb:app_id" content="780040857026073" />
 
     <link rel="canonical" href="https://www.bohnphysio.com" />
     <link rel="stylesheet" href="css/style.css" />
@@ -86,10 +95,18 @@
           id="navbarNavAltMarkup"
         >
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#about">Sobre mim</a>
-            <a class="nav-link" href="#treatments">Tratamentos</a>
-            <a class="nav-link" href="#contact">Contato</a>
+            <a class="nav-link" id="header_home" active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" id="header_about" href="#about">Sobre mim</a>
+            <a class="nav-link" id="header_treatments" href="#treatments">Tratamentos</a>
+            <a class="nav-link" id="header_tips" href="#tips">Dicas</a>
+            <a class="nav-link" id="header_contact" href="#contact">Contato</a>
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="btnradio" id="btnLangugePtBr" autocomplete="off" checked>
+              <label class="btn btn-outline-secondary" for="btnLangugePtBr"><img class="mhc-flag" src="assets/flags/brazil.svg"></label>
+            
+              <input type="radio" class="btn-check" name="btnradio" id="btnLanguageEn" autocomplete="off">
+              <label class="btn btn-outline-secondary" for="btnLanguageEn"><img class="mhc-flag" src="assets/flags/united_states.svg"></label>
+            </div>
           </div>
         </div>
       </div>
@@ -100,7 +117,7 @@
       <div class="container mhc-content-index">
         <div class="mhc-col-a">
           <h1>Jennifer Bohn Cezario</h1>
-          <p>
+          <p id="description_text">
             Fisioterapeuta integrativa com ampla experiência em geriatria e
             gerontologia com foco nas áreas cardiopulmonar, neurologia e
             ortopedia. Especialista em acupuntura.
@@ -117,26 +134,37 @@
 
     <section id="about" class="mhc-container-about">
       <div class="container">
-        <h2>Sobre mim</h2>
-        <p>
-          Sou fisioterapeuta integrativa desde 2017, possuo experiência com
-          atendimentos em idosos e domiciliares. Atuo na área cardiopulmonar,
-          neurológica e ortopédica, reunindo meu conhecimento geral à outras
-          técnicas associadas, como acupuntura, dry needling, eletro, termo e
-          fototerapia, entre outros. Já realizei mais de 5 (cinco) mil
-          atendimentos domiciliares através de empresas de home care e
-          particulares; atualmente, além de atendimentos à domicílio, trabalho
-          em uma clínica de Fisioterapia, onde realizo tratamentos para os mais
-          diversos tipos de patologias. Meu maior foco é promover não somente a
-          reabilitação, mas também a prevenção e melhora da qualidade de vida.
-        </p>
+        <div>
+          <h2 id="about_title">Sobre mim</h2>
+          <p id="about_text">
+            Nasci em 1995, sou casada e formada em fisioterapia pela Pontifícia
+            Universidade Católica do Paraná (PUCPR) desde 2017. Iniciei minha
+            carreira na fisioterapia trabalhando em hospitais e simultaneamente
+            dando aula de Pilates. Desde sempre amei trabalhar com fisioterapia
+            gerontológica, e, por isso, dei enfoque nos estudos nesse público em
+            especial. Possuo cursos de fisiologia no envelhecimento e
+            fisioterapia na gerontologia. Após alguns anos trabalhando como
+            fisioterapeuta integrativa, senti necessidade de me especializar
+            mais para melhorar meu tratamento, então realizei a pós graduação em
+            Acupuntura e, atualmente, estou cursando a de Fisioterapia em
+            Uroginecologia. Realizo atendimentos domiciliares através de
+            empresas de home care e particulares; também faço atendimentos em
+            uma Clínica de Fisioterapia, onde realizo tratamentos para os mais
+            diversos tipos de patologias. Meu maior foco é promover não somente
+            a reabilitação, mas também a prevenção e melhora da qualidade de
+            vida. Quer conhecer mais sobre como a fisioterapia pode te ajudar a
+            ter uma melhor qualidade de vida? Clique
+            <a href="https://wa.me/+5541995854780">aqui</a> agende agora uma
+            consulta!
+          </p>
+        </div>
       </div>
     </section>
 
     <section id="treatments" class="mhc-container-treatments">
       <div class="container">
-        <h2>Tratamentos</h2>
-        <ul>
+        <h2 id="treatments_title">Tratamentos</h2>
+        <ul id="treatment_list">
           <li>Cinesioterapia - alongamento e fortalecimento muscular;</li>
           <li>
             Eletroterapia - uso de correntes elétricas com objetivos
@@ -159,9 +187,113 @@
       </div>
     </section>
 
+    <section id="tips" class="mhc-container-tips">
+      <div class="container">
+        <h2 id="tips_title">Dicas da físio</h2>
+        <h3><strong id="tips_subtitle">Como envelhecer saudável?</strong></h3>
+        
+        <div class="mhc-tips">
+          <div class="card" style="width: 18rem">
+            <img
+              src="assets/posts/exercicios_fisicos_regulares.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 id="tip1_title" class="card-title">Atividades físicas regulares</h5>
+              <p id="tip1_text" class="card-text">
+                Inclua atividades como natação, caminhadas, tai chi, ioga.
+                Busque atividades que sejam seguras e adequadas à você.
+              </p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem">
+            <img
+              src="assets/posts/alimentacao_saudavel.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 id="tip2_title" class="card-title">Alimentação saudável</h5>
+              <p id="tip2_text" class="card-text">
+                Mantenha uma dieta equilibrada e busque beber bastante água para
+                se manter hidratado. Consulte um nutricionista para te ajudar
+                nisso
+              </p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem">
+            <img
+              src="assets/posts/cuidados_com_a_saude.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 id="tip3_title" class="card-title">Cuidados com a saúde</h5>
+              <p id="tip3_text" class="card-text">
+                Realize as consultas médicas conforme prescrição; não esqueça de
+                tomar os medicamentos indicados nas horas corretas
+              </p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem">
+            <img
+              src="assets/posts/estimulacao_mental.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 id="tip4_title" class="card-title">Estimulação mental</h5>
+              <p id="tip4_text" class="card-text">
+                Mantenha seu cérebro ativo, desafiado e engajado, promovendo uma
+                saúde cerebral e prevenindo o declínio cognitivo
+              </p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem">
+            <img
+              src="assets/posts/descanso_adequado.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 id="tip5_title" class="card-title">Descanso adequado</h5>
+              <p id="tip5_text" class="card-text">
+                Essencial para manter a saúde física, mental e emocional, pois é
+                através do descanso que o corpo e a mente se recuperam e
+                restauram energia, realizando processos de reparação e
+                regeneração
+              </p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem">
+            <img
+              src="assets/posts/controle_do_estresse.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 id="tip6_title" class="card-title">Controle do estresse</h5>
+              <p id="tip6_text" class="card-text">
+                O estresse é uma resposta natural do corpo, mas quando ocorre de
+                forma crônica ou intensa, tem efeitos negativos no nosso bem
+                estar. Aprender a gerenciar é essencial para a qualidade de
+                vida.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="contact" class="mhc-container-contact">
       <div class="container">
-        <h2>Contato</h2>
+        <h2 id="contact_title">Contato</h2>
         <div class="mhc-social-media">
           <div id="btn-phone" class="mhc-social-media-buttons">
             <a href="tel:+5541995854780"><i class="fa fa-phone"></i></a>
@@ -187,7 +319,7 @@
             </a>
           </div>
         </div>
-        <h2>Regiões atendidas</h2>
+        <h2 id="regions_title">Regiões atendidas</h2>
         <iframe
           class="mhc-map"
           src="https://www.google.com/maps/d/embed?mid=1EHiZ95xICadA14eQMd7DXgPR6gXNKdY&hl=en_US&ehbc=2E312F"
@@ -197,8 +329,9 @@
 
     <footer class="mhc-footer">
       <div>
-        <p>&copy; bohnphysio.com 2023. All Rights Reserved.</p>
+        <p>&copy; bohnphysio.com 2023. <span id="all_rights_reserved">Todos os direitos reservados.</span></p>
       </div>
     </footer>
   </body>
 </html>
+<script src="js/script-translate.js"></script>
