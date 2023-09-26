@@ -25,7 +25,7 @@ function loadTranslations(language) {
     })
     .catch((error) => console.error("Erro ao carregar traduções:", error));
 }
-c
+
 // Função para traduzir elementos HTML com base nas traduções
 function translateElements(translations) {
   // Traduzir elementos do cabeçalho
